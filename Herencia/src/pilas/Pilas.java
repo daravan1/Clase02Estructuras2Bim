@@ -11,10 +11,10 @@ package pilas;
 public class Pilas {
     public static void main(String[] args) {
         int op;
-        Metodos myPila = new Metodos();
+        Metodos_pilas myPila = new Metodos_pilas();
         do {
             op = myPila.menu();
             switch(op){}
-        } while (op!=0);
+        } while (op!=0)
     }
 }
