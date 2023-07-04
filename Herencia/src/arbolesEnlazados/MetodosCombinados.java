@@ -63,7 +63,6 @@ public class MetodosCombinados {
             calif[i] = entrada.nextFloat();
         }
         nuevo = new NodoL(nombre, id, sexo, calif);
-
         return nuevo;
     }
 
@@ -106,7 +105,7 @@ public class MetodosCombinados {
             actual = actual.sig;
         }
     }
-
+    
     public void inOrden(NodoA actual) {
         if (actual != null) {
             inOrden(actual.izq);
@@ -120,12 +119,11 @@ public class MetodosCombinados {
         if (actual != null) {
             reporte(actual.izq);
             if (actual.promedio >= 7) {
-                System.out.print(actual.id + ": " + actual.nombre + " esta Aprobado ");
+                System.out.println(actual.id + ": " + actual.nombre + " esta Aprobado");
             } else {
-                System.out.print(actual.id + ": " + actual.nombre + " esta Reprobado ");
+                System.out.println(actual.id + ": " + actual.nombre + " esta Reprobado");
             }
             reporte(actual.der);
-            System.out.println(" ");
         }
     }
 

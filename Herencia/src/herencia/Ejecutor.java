@@ -26,7 +26,7 @@ public class Ejecutor {
                 case 4 -> obj.reporte('m');
                 case 5 -> obj.listar();
             }
-        } while (true);
+        } while (op!=0);
     }
 }
   

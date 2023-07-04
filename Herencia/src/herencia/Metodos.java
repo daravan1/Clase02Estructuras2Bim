@@ -25,7 +25,7 @@ public class Metodos {
         System.out.println("3. Reporte varones");
         System.out.println("4. Reporte damas");
         System.out.println("5. Listar");
-        System.out.println("6. Salir");
+        System.out.println("0. Salir");
 
         return entrada.nextInt();
 
@@ -49,7 +49,7 @@ public class Metodos {
         System.out.println("Ingresar Sexo");
         sexo = entrada.nextLine().charAt(0);
         for (int i = 0; i < 3; i++) {
-            System.out.println("Ingrese la calificacion " + i + ": ");
+            System.out.println("Ingrese la calificacion " + (i+1) + ": ");
             calif[i] = entrada.nextFloat();
         }
         Estudiante nuevo = new Estudiante(id, nombre, sexo, calif, head);
@@ -73,9 +73,6 @@ public class Metodos {
                 actual = actual.sig;
             nuevo.sig = actual.sig;
             actual.sig = nuevo;
-
-            
-
         }
 
     }

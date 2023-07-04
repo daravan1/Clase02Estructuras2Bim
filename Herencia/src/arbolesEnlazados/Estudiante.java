@@ -4,18 +4,16 @@
  */
 package arbolesEnlazados;
 
-import arbolesEnlazados.Persona;
-
-
 /**
  *
  * @author SALA H
  */
-    public class Estudiante extends Persona{
+public class Estudiante extends Persona {
+
     private float[] calificaciones;
     Estudiante sig;
 
-    public Estudiante(int id,String nombre, char sexo,float[] calificaciones, Estudiante sig) {
+    public Estudiante(int id, String nombre, char sexo, float[] calificaciones, Estudiante sig) {
         super(nombre, id, sexo);
         this.calificaciones = calificaciones;
         this.sig = sig;
@@ -60,13 +58,4 @@ import arbolesEnlazados.Persona;
     public void setSexo(char sexo) {
         this.sexo = sexo;
     }
-
-    public float getPromedio() {
-        float suma = 0;
-        for (float nota : calificaciones) {
-            suma += nota;
-        }
-        suma = suma/calificaciones.length;
-        return suma;
-    }   
-} 
+}

@@ -11,7 +11,7 @@ package arbolesEnlazados;
 public class Ejecutor {
     //Arreglar print de inOrden y reporte
     public static void main(String[] args) {
-        int op, num;
+        int op;
         
         MetodosCombinados obj = new MetodosCombinados();
        
@@ -26,10 +26,8 @@ public class Ejecutor {
                 case 4 -> obj.inOrden(obj.raizM);
                 case 5 -> obj.inOrden(obj.raizH);
                 case 6 -> obj.reporte(obj.raizM);
-                case 8 -> obj.reporte(obj.raizH);
+                case 7 -> obj.reporte(obj.raizH);
                 
-                
-            
             }
         } while (op!= 0);
     }
